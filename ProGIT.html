@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayush Navin — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="GITpro.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<header class="navbar">
+  <a href="#hero" class="nav-logo">AN</a>
+  <label for="nav-toggle" class="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </label>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow">01 — Who I am</p>
+      <h1>Ayush Navin</h1>
+      <p class="role">Web Dev &amp; Competitive Programming Learner</p>
+      <p class="intro">I'm a CS &amp; AI student at Scaler School of Technology. Between coursework, I build small
+      web tools and write C++ for competitive programming.</p>
+      <div class="cta-row">
+        <a href="#projects" class="btn btn-primary">See what I've built</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <p class="eyebrow">02 — A bit more</p>
+    <h2>About</h2>
+    <p class="section-lead">
+      I'm a CS student at Scaler School of Technology, studying CS &amp; AI. Outside coursework, I spend a lot of
+      time on two things that don't always overlap neatly: competitive programming in C++, and independent math
+      — I spent a few weeks figuring out how to combine several separate functions into one continuous
+      expression using an interval-selector trick, just to see if I could redraw the Batman logo with it.
+    </p>
+    <p class="section-lead">
+      Most of what I build right now sits somewhere between "web dev practice" and "an excuse to think about
+      problems differently."
+    </p>
+    <blockquote class="about-note">
+      <p>After JEE and Class 12, I didn't get into a college that I felt was a good fit, and I was also
+      reluctant to pursue a conventional BTech. Since I felt I had a genuine intuition for mathematics, I
+      decided to take a drop and prepare for ISI and CMI at a higher level.</p>
+      <p>That attempt didn't work out, and I eventually ended up at Scaler. Now that I'm here, I don't want to
+      keep dividing my focus between two different paths. For now, the best thing for me is to fully immerse
+      myself in Scaler's coursework, CS, and competitive programming.</p>
+      <p>Pursuing higher mathematics doesn't have to be abandoned—it can wait. Maybe sometime in the future,
+      with more stability and perspective, I can return to it and pursue it seriously. For now, I want to
+      focus on making the most of the path I'm on.</p>
+    </blockquote>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section section-alt">
+    <p class="eyebrow">03 — What I work with</p>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Web</h3>
+        <div class="pill-row">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">Flexbox / Grid</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Competitive Programming</h3>
+        <div class="pill-row">
+          <span class="pill">C++</span>
+          <span class="pill pill-muted">Beginner — actively practicing</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Currently Learning</h3>
+        <div class="pill-row">
+          <span class="pill pill-accent">Data Structures &amp; Algorithms</span>
+          <span class="pill pill-accent">Problem Solving</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <p class="eyebrow">04 — What I've built</p>
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <article class="project-card project-card-solo">
+        <div class="project-card-top">
+          <span class="project-tag">Math</span>
+        </div>
+        <h3>The Batman Function</h3>
+        <p>A generalized framework for combining multiple functions into a single expression. Its building
+        block, A₁(L, n₁, n₂, l), uses floor, signum and ceiling to switch a piece on between n₁ and n₂ and
+        zero it everywhere else, so separate pieces can simply be added together. The paper walks through
+        the construction step by step, demos it with sin(x) followed by log(x), then applies it to the
+        Batman logo.</p>
+        <p>The raw Batman curves were sourced from the internet; the framework that unifies them is my
+        contribution. The paper also explains why a true function can never draw the full logo — one y
+        per x.</p>
+        <p class="project-footnote">I posted it on Reddit before joining Scaler — someone replied within
+        24 hours with a more optimized version. Humbling, but a good reminder to keep publishing work early.</p>
+        <div class="project-tech">
+          <span>Floor / Signum / Ceiling</span><span>Piecewise Functions</span><span>Desmos</span><span>LaTeX</span>
+        </div>
+        <div class="project-links">
+          <a href="batman-function-paper.pdf" class="link-arrow" target="_blank" rel="noopener">Read the paper (PDF)</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section section-alt">
+    <p class="eyebrow">05 — Where I'm studying</p>
+    <h2>Education</h2>
+    <div class="edu-row">
+      <div class="edu-marker" aria-hidden="true"></div>
+      <div>
+        <h3>Scaler School of Technology</h3>
+        <p class="edu-meta">B.Tech, Computer Science &amp; Artificial Intelligence (CSAI)</p>
+        <p class="edu-note">Currently studying, with a focus on web development and competitive programming.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact">
+    <p class="eyebrow">06 — Let's talk</p>
+    <h2>Get in touch</h2>
+    <p class="section-lead">Whether it's about a project, competitive programming, or just to talk math — reach out.</p>
+    <div class="contact-links">
+      <a href="mailto:ayush.26bcs10398@sst.Scaler.com" class="contact-link">ayush.26bcs10398@sst.Scaler.com</a>
+      <a href="https://github.com/AyushNavin" class="contact-link">GitHub</a>
+      <!-- <a href="https://linkedin.com/in/your-linkedin" class="contact-link">LinkedIn</a> -->
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Ayush Navin</p>
+  <p>Built with HTML &amp; CSS</p>
+</footer>
+
+</body>
+</html>
